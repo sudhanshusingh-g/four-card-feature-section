@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+
+:root{
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --veryDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--veryLightGray);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    text-align: center;
+    padding: 3rem 2rem;
+}
+.heading h1{
+    font-weight: 200;
+    font-size: 1.5rem;
+    color: var(--veryDarkBlue);
+}
+.heading .bold{
+    font-weight: 600;
+}
+.heading p{
+    color: var(--grayishBlue);
+    margin: 1.2rem 0 0 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1.5rem;
+    padding:2rem;
+    
+}
+.first,.third{
+    width: 100%;
+}
+.card{
+    background-color: white;
+    border-radius: 0.4rem;
+    box-shadow: 0px 3px 14px rgba(89, 72, 245, 0.39);
+    padding: 1.5rem;
+    
+}
+.card h3{
+    font-weight: 600;
+    color: var(--veryDarkBlue);
+}
+.card p{
+    font-weight: 400;
+    color: var(--grayishBlue);
+    margin: 1rem 0;
+    font-size: 0.8rem;
+}
+.card div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.second{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.supervisor{
+    border-top: 4px solid var(--cyan);
+}
+
+.teamBuilder{
+    border-top: 4px solid var(--red);
+    width: 100%;
+}
+.karma{
+    border-top: 4px solid var(--orange);
+    width: 100%;
+}
+.calculator{
+    border-top: 4px solid var(--blue);
+}
+
+@media screen and (min-width: 960px) {
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main{
+        width: 70%;
+    }
+    .container{
+        flex-direction: row;
+    }
+   
+}
